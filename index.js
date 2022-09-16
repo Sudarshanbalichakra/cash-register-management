@@ -9,11 +9,11 @@ const avaliableNotes=[2000,500,200,100,50,20,10,5,1];
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMassage();
     if (billAmount.value>0){
-        if (billAmount.value>= cashGiven.value){
+        if (cashGiven.value >= billAmount.value){
             var amountToBeReturn=cashGiven.value-billAmount.value;
             calculateChange(amountToBeReturn);
         }else{
-            showMassge("do you wanna wash plate's")
+            showMassge("do you wanna wash plate's");
         }
 
     }else{
@@ -22,7 +22,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount(){
 });
 
 
-function calculateChange(){
+function calculateChange(amountToBeReturn){
     for (var i=0;i<avaliableNotes.length;i++){
         const numberOfNotes=Math.trunc(amountToBeReturn/avaliableNotes[i]);
         amountToBeReturn%avaliableNotes[i];   
