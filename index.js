@@ -5,10 +5,20 @@ const message=document.querySelector("#error-msg");
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
-    if (billAmount.value > 0){
+    message.style.display="none"
+    if (billAmount.value>0){
+        if (billAmount.value>= cashGiven.value){
+
+        }else{
+            showMassge("do you wanna wash plate's")
+        }
 
     }else{
-       message.innerText="invalide amount";
+       showMassge("invalide amount")
     }
 });
 
+function showMassge(msg){
+    message.style.display="block";
+    message.textContent=(msg)
+}
