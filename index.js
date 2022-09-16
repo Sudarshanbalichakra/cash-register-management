@@ -25,7 +25,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount(){
 function calculateChange(amountToBeReturn){
     for (var i=0;i<avaliableNotes.length;i++){
         const numberOfNotes=Math.trunc(amountToBeReturn/avaliableNotes[i]);
-        amountToBeReturn%avaliableNotes[i];   
+        amountToBeReturn=amountToBeReturn % avaliableNotes[i];  
         noOfNotes[i].innerText=numberOfNotes;     
 
     }
