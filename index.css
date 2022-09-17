@@ -1,7 +1,42 @@
 *{
+    box-sizing: border-box;
+    margin: 0px;
 
 }
 
-body{
+:root{
     text-align: center;
+}
+
+.container{
+    display: flex;
+   flex-direction:column;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+#bill-amount{
+    text-align: center;
+    display: block;
+}
+
+header{
+    text-align: center;
+    
+}
+
+table{
+    text-align: center;
+}
+
+input{
+    display: block;
+    text-align: center;
+   
+}
+
+button{
+   display: block;
 }
