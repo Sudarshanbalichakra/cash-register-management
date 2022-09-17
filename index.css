@@ -1,42 +1,40 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
 
-}
-
-:root{
-    text-align: center;
-}
-
-.container{
-    display: flex;
-   flex-direction:column;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding: 1rem;
-}
-
-#bill-amount{
-    text-align: center;
-    display: block;
-}
-
-header{
-    text-align: center;
-    
-}
-
-table{
-    text-align: center;
-}
-
-input{
+body{
     display: block;
     text-align: center;
+    padding: 2rem 2rem;
    
 }
 
-button{
-   display: block;
+.main{
+    background-color: antiquewhite;
+
 }
+
+
+
+.container{
+   display: block;
+   text-align: center;
+   padding: 1rem 1rem;
+   margin:auto;
+}
+
+#bill-amount,#cash-given{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+table,th,td{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    
+}
+
+.caption{
+    color: blue;
+}
+
+

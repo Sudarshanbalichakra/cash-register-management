@@ -9,7 +9,7 @@ const avaliableNotes=[2000,500,200,100,50,20,10,5,1];
 checkButton.addEventListener("click", function validateBillAndCashAmount(){
     hideMassage();
     if (billAmount.value>0){
-        if (cashGiven.value >= billAmount.value){
+        if(Number(cashGiven.value) >= Number(billAmount.value)){
             var amountToBeReturn=cashGiven.value-billAmount.value;
             calculateChange(amountToBeReturn);
         }else{

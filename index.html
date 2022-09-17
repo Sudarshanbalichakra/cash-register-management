@@ -8,48 +8,47 @@
     <link href="./index.css" rel="stylesheet"></link>
 </head>
 <body>
-    <div class="container">
-        <header>CASH REGISTER MANAGER </header>
-        <p> Enter the bill amount and cash given by the customer to khow how many change need to be return to the customer</p>
-        <label for="bill-amount">bill amount:</label>
-        <input id="bill-amount" type="text"></input>
-        <label for="cash-given">cash given:</label>
-        <input id="cash-given"></input>
-        <button id="check-btn">check</button>
-        <p id="error-msg"></p>
-        <caption>cash to be return</caption>
-        <table>
-            <tr>
-                <th>no. of cash</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                
-            </tr>
-            <tr>
-                <th>CASH</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>200</td>
-                <td>100</td>
-                <td>50</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-
-           
-            
-        </table>
+    <div class="main">
+        <div class="container">
+            <header>CASH REGISTER MANAGER </header>
+            <p> Enter the bill amount and cash given by the customer to khow how many change need to be return to the customer</p>
+            <label for="bill-amount">bill amount:</label>
+            <input id="bill-amount" type="text"></input>
+            <label for="cash-given">cash given:</label>
+            <input id="cash-given"></input>
+            <button id="check-btn">check</button>
+            <p  id="error-msg"></p>
+            <caption class="caption">cash to be return</caption>
+            <table>
+                <tr>
+                    <th>no. of cash</th>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    <td id="no-of-notes"></td>
+                    
+                </tr>
+                <tr>
+                    <th>CASH</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
     </div>
+   
    
 </body>
 <script src="./index.js"></script>
